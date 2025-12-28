@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1c1c1c, #111);
+    color: #fff;
+    line-height: 1.6;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 3px solid #f7e03c;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #f7e03c;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f7e03c;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-left: 5px solid #f7e03c;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1 1 250px;
+    box-shadow: 0 5px 15px rgba(247,224,60,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(247,224,60,0.4);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #f7e03c;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f7e03c;
+    color: #111;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-links a:hover {
+    background-color: #e6d32f;
+    transform: translateY(-3px);
+}
+
+.social-links i {
+    font-size: 1.3rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    border-top: 3px solid #f7e03c;
+    padding: 20px;
+    color: #ccc;
+}
+.join-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #7289da, #5b6eae);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    margin-top: 10px;
+}
+
+.join-btn i {
+    font-size: 1.1rem;
+}
+
+.join-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+.gallery-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #ffcc00; /* żółty, pasuje do Summer RP */
+    color: #000;
+}
+.apply-box {
+    display: inline-block;
+    background: #f1c40f;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.25s;
+}
+
+.apply-box i {
+    margin-right: 10px;
+}
+
+.apply-box:hover {
+    background: #ffe066;
+    transform: scale(1.05);
+}
+.rules-container {
+    max-width: 900px;
+    margin: 120px auto;
+    padding: 20px;
+}
+
+.rules-title {
+    text-align: center;
+    font-size: 42px;
+    color: #FFD700;
+    margin-bottom: 40px;
+}
+
+/* Akordeony */
+.accordion {
+    width: 100%;
+    background: #ffffff10;
+    border: 1px solid #ffffff20;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    transition: 0.3s;
+    backdrop-filter: blur(6px);
+}
+
+.accordion:hover {
+    background: #ffcc0040;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    background: #ffffff08;
+    border-left: 2px solid #FFD700;
+    border-radius: 0 0 12px 12px;
+    transition: max-height 0.35s ease;
+    padding: 0 18px;
+}
+
+.panel p {
+    padding: 15px 0;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #fff;
+    white-space: pre-line;
+}
+
+
